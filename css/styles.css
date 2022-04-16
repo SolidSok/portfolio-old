@@ -145,6 +145,15 @@ button:hover, button:focus,
     margin-right: auto;
 }
 
+.contactmain {
+    padding: 15px;
+    margin: 15px;
+}
+
+.workmain {
+    padding: 15px;
+    margin: 15px;
+}
 @supports (display: grid) {
     .grid {
         display: grid;
