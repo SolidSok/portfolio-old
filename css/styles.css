@@ -6,7 +6,7 @@ Primary Color (Purple): #357b70;
 Secondary Color (Orange): #e0b354;
 */
 :root {
-  --primary-color: #357b70;
+  --primary-color: #33c062;
   --secondary-color: #e0b354;
   --dark-grey: #2b2b2b;
 }
@@ -15,7 +15,7 @@ Secondary Color (Orange): #e0b354;
 }
 
 body {
-  background-color: rgb(105, 128, 172);
+  background-color: rgba(92, 116, 167, 0.973);
   font-family: 'Lato', sans-serif;
   font-weight: 400;
   font-size: 16px;
@@ -23,7 +23,11 @@ body {
   line-height: 1.6;
   /* sets the line-height to 1.6 */
 }
-
+h1,
+h2,
+h3 {
+  text-align: center;
+}
 h1 {
   font-size: 30px;
   font-weight: 700;
@@ -41,6 +45,7 @@ h3 {
 
 a {
   color: var(--primary-color);
+  text-decoration: none;
 }
 
 a:visited {
@@ -51,20 +56,13 @@ a:visited {
 a:hover a:focus {
   /* No underlining when hovering over a link */
   text-decoration: none;
+  cursor: pointer;
 }
 
 a:active {
   /* selected link */
   color: #489c79;
 }
-
-.page-footer {
-  clear: both;
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-}
-
 .profile {
   max-width: 700px;
   margin: 0 auto;
@@ -74,6 +72,14 @@ a:active {
   width: 250px;
   margin-right: 40px;
   border-radius: 50%;
+}
+
+.page-footer {
+  clear: both;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding-bottom: 4%;
 }
 
 .page-header {
@@ -154,6 +160,12 @@ button:focus,
 .workmain {
   padding: 20px;
   margin: 15px;
+}
+.project {
+  color: #2b2b2b;
+}
+.text-body {
+  background-color: antiquewhite;
 }
 @supports (display: grid) {
   .grid {
