@@ -6,7 +6,7 @@ Primary Color (Purple): #357b70;
 Secondary Color (Orange): #e0b354;
 */
 :root {
-  --primary-color: #33c062;
+  --primary-color: #0c1610;
   --secondary-color: #e0b354;
   --dark-grey: #2b2b2b;
 }
@@ -15,7 +15,7 @@ Secondary Color (Orange): #e0b354;
 }
 
 body {
-  background-color: rgba(92, 116, 167, 0.973);
+  background-color: rgba(203, 212, 230, 0.973);
   font-family: 'Lato', sans-serif;
   font-weight: 400;
   font-size: 16px;
@@ -44,23 +44,22 @@ h3 {
 }
 
 a {
+  animation: 2s ease;
   color: var(--primary-color);
   text-decoration: none;
 }
 
 a:visited {
-  /* visited link*/
   color: #06494e;
 }
 
 a:hover a:focus {
-  /* No underlining when hovering over a link */
   text-decoration: none;
   cursor: pointer;
+  color: #489c79;
 }
 
 a:active {
-  /* selected link */
   color: #489c79;
 }
 .profile {
@@ -86,10 +85,11 @@ a:active {
   display: flex;
   width: 100%;
   padding: 20px;
+  background-color: aliceblue;
 }
 .page-header__item {
-  flex: 0 1 200px;
-  width: 200px;
+  flex: 0 1 80px;
+  width: 100px;
 }
 .page-header__item:last-child {
   flex-grow: 1;
@@ -153,6 +153,7 @@ button:focus,
 }
 
 .contactmain {
+  text-align: center;
   padding: 15px;
   margin: 15px;
 }
@@ -161,11 +162,61 @@ button:focus,
   padding: 20px;
   margin: 15px;
 }
+.work-description {
+  text-align: left;
+}
+.project-text {
+  padding-left: 5px;
+}
 .project {
   color: #2b2b2b;
 }
-.text-body {
-  background-color: antiquewhite;
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+.modal-image {
+  float: inline-start;
+  max-width: 90%;
+  height: auto;
+}
+.modal-list {
+  justify-content: flex-end;
+  max-width: 50%;
 }
 @supports (display: grid) {
   .grid {
@@ -176,7 +227,7 @@ button:focus,
   }
 
   .grid__item {
-    background-color: lightgray;
+    background-color: rgb(245, 241, 241);
     width: auto;
     min-height: auto;
     margin: 0;
