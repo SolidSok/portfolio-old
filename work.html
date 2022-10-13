@@ -6,14 +6,12 @@
 
     <link
       href="https://fonts.googleapis.com/css2?family=Lato&display=swap"
-      rel="stylesheet"
-    />
+      rel="stylesheet" />
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
     <link
       rel="stylesheet"
       type="text/css"
-      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
-    />
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
     <link rel="stylesheet" type="text/css" href="css/styles.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
   </head>
@@ -23,8 +21,7 @@
       <img
         src="img/Sol-logos_white-edit.png"
         alt="logo image"
-        class="page-header__item"
-      />
+        class="page-header__item" />
       <nav class="main-navigation page-header__item">
         <ul role="menubar" class="navigation-list">
           <li role="presentation">
@@ -58,7 +55,7 @@
     <section class="workmain">
       <h1><u>Work</u></h1>
       <div class="grid">
-        <!--Grid items will here-->
+        <!--Meet App-->
         <div class="grid__item meet-app">
           <a href="https://solidsok.github.io/meet"
             ><h2 class="project">Meet Application</h2></a
@@ -72,8 +69,26 @@
             it can also be used offline. Though it will only be able to use
             whatever data was cached before.
           </p>
-          <button id="btn-meet">View more details...</button>
+          <div>
+            <img class="modal-image" src="img/meet/main.png" alt="main image" />
+            <div>
+              Notable Features:
+              <ul class="modal-list">
+                <li>React</li>
+                <li>Jest</li>
+                <li>AWS Lambda</li>
+                <li>oAuth2</li>
+              </ul>
+            </div>
+          </div>
+          <a href="https://github.com/SolidSok/meet" target="_blank"
+            >Github Repo</a
+          >
+          <br />
+          <a href="https://solidsok.github.io/meet" target="_blank">Web Page</a>
         </div>
+
+        <!-- myFlix App-->
 
         <div class="grid__item sokflix-app">
           <a href="https://sokflix.netlify.app">
@@ -88,11 +103,30 @@
             react-bootstrap. Both the front-end and back-end for this
             application were created from scratch by me.
           </p>
-          <button id="btn-sokflix">View more details...</button>
+          <div>
+            <img
+              alt="myFlix page"
+              src="img/myFlix/main.png"
+              class="modal-image" />
+            Notable Features:
+            <ul>
+              <li>React</li>
+              <li>Parcel</li>
+              <li>React-Bootstrap</li>
+              <li>Axios</li>
+              <li>React-Router</li>
+              <li>React-Redux</li>
+            </ul>
+          </div>
 
-          <a href=""><p>Github Repo</p></a>
+          <a href="https://github.com/SolidSok/myFlix-client"
+            ><p>Github Repo</p></a
+          >
+
+          <a href="https://sokflix.netlify.app">WebPage</a>
         </div>
 
+        <!-- Pokedex App-->
         <div class="grid__item pokedex-app">
           <a href="https://solidsok.github.io/first-js-app/">
             <h2 class="project">Pokedex Web App</h2></a
@@ -105,50 +139,92 @@
             from a pokemon api and presents them as a list in the client. It
             uses Javascript and some Jquery.
           </p>
-          <button id="pokedex">View more details...</button>
+          <div>
+            <img
+              class="modal-image"
+              src="img/Pokedex/main.png"
+              alt="pokdex image" />
+            <div>
+              Notable Features:
+              <ul class="modal-list">
+                <li>JQuery</li>
+                <li>Boot Strap</li>
+              </ul>
+            </div>
+          </div>
+          <a href="https://github.com/SolidSok/first-js-app"
+            ><p>Github Repo</p></a
+          >
 
-          <a href=""><p>Github Repo</p></a>
+          <a href="https://solidsok.github.io/first-js-app/">WebPage</a>
         </div>
-
+        <!-- Angular myFlix-->
         <div class="grid__item pokedex-react-app">
-          <a></a>
-          <h2 class="project">Pokedex(React) Web App</h2>
+          <a href="https://github.com/SolidSok/myFlix-Angular-client">
+            <h2 class="project">myFlix(Angular) Web App</h2></a
+          >
+
           <h3 class="work-description">Description:</h3>
 
           <p class="project-text">
-            This is an updated version of my initial Pokedex project. I created
-            this after gaining some familiarity with React. It performs the same
-            functions as the original Pokedex Application, but has a more
-            accessible and intuitive style.
+            The aim of this project is to build the client-side for an
+            application called myFlix using Angular based on its existing
+            server-side code (REST API and database), with supporting
+            documentation.
           </p>
-          <button id="btn-pokedex-react">View more details...</button>
+          <div>
+            <img
+              class="modal-image"
+              src="img/myFlix-Angular/main.jpg"
+              alt="myflix angular image" />
+            <div>
+              Notable Features:
+              <ul class="modal-list">
+                <li>Angular</li>
+                <li>Allows users to register profile</li>
+                <li>Pulls movies from custom database</li>
+              </ul>
+            </div>
+          </div>
+          <a href="https://github.com/SolidSok/myFlix-Angular-client"
+            ><p>Github Repo</p></a
+          >
 
-          <a href=""><p>Github Repo</p></a>
+          <a href="https://solidsok.github.io/myFlix-Angular-client/welcome">
+            <p>WebPage</p></a
+          >
         </div>
-
+        <!-- Chat App-->
         <div class="grid__item native-app">
-          <a></a>
-          <h2 class="project">Native App</h2>
+          <a href="https://github.com/SolidSok/chat-app">
+            <h2 class="project">React Native Chat App</h2>
+          </a>
           <h3 class="work-description">Description:</h3>
 
-          <p class="project-text">Coming soon...</p>
-          <button id="btn-native">View more details...</button>
-
-          <a href=""><p>Github Repo</p></a>
-        </div>
-
-        <div class="grid__item blog">
-          <a></a>
-          <h2 class="project">Blog</h2>
           <p class="project-text">
-            I plan to create a blog about my development growth here. It may
-            also include some info about my hobbies.
+            Chat app for mobile devices using React Native. The app will provide
+            users with a chat interface and options to share images and their
+            location.
           </p>
-          <h3>Description:</h3>
-          <button id="btn-blog">View more details...</button>
+          <div>
+            <img
+              class="modal-image"
+              src="img/chat-app/Screenshot (Oct 13, 2022 12_45_04 PM).png"
+              alt="chat app image " />
+
+            <div>
+              Notable Features:
+              <ul class="modal-list">
+                <li>React Native</li>
+                <li>Expo</li>
+                <li>FireBase</li>
+              </ul>
+            </div>
+          </div>
           <a href=""><p>Github Repo</p></a>
         </div>
-      </div>
+
+     
 
       <!-- The Modal -->
       <div id="myModal" class="modal">
